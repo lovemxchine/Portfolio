@@ -3,11 +3,7 @@ import profileImage from "./assets/profilec.png";
 const Introduce = () => {
   const text = "Channarong Chancher";
   const career = "Backend Developer";
-  const textAbout = `i am 4th-year Electronics Engineering (Computer) student with a
-              passion for backend development. I specialize in Golang and
-              Node.js, and I'm constantly looking for ways to improve my skills
-              and deepen my knowledge in these areas. I'm excited about building
-              efficient and scalable backend systems .`;
+
   const [displayText, setDisplayText] = useState("");
   const [displayCareer, setDisplayCareer] = useState("");
   const [aboutMe, setAboutMe] = useState("");
@@ -57,9 +53,9 @@ const Introduce = () => {
             keen interest in backend development, particularly in Golang and
             Node.js. My focus is on building efficient and scalable backend
             systems. I have experience in web development, database management
-            (MySQL, PostgreSQL), and API integration. I also value collaboration
-            and problem-solving, always striving to improve through feedback and
-            teamwork.
+            (MySQL, PostgreSQL, Firestore), and API integration. I also value
+            collaboration and problem-solving, always striving to improve
+            through feedback and teamwork.
           </div>
         </div>
         <div className="floating-image">
