@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const Introduce = () => {
-  const text = "Hi ! My name is Noey";
+  const text = "Hi ! My12 name is Noey";
   const career = " I'm Web Developer";
 
   const [displayText, setDisplayText] = useState("");
