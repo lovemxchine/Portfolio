@@ -61,7 +61,7 @@ const Content = () => {
             <h2 style={{ color: "black" }}>Project 2</h2>
           </div>
           <div className="project-card-body">
-            <h2 style={{ marginBottom: "1rem" }}>Thesis</h2>
+            <h2 style={{ marginBottom: "1rem" }}>Restaurant App</h2>
 
             <p>
               This project was for a Software Engineering class, I gained
@@ -75,7 +75,7 @@ const Content = () => {
             <h2 style={{ color: "black" }}>Project 3</h2>
           </div>
           <div className="project-card-body">
-            <h2 style={{ marginBottom: "1rem" }}>Thesis</h2>
+            <h2 style={{ marginBottom: "1rem" }}>Web Board</h2>
 
             <p>
               As part of a hands-on workshop in Web Application Development, I
