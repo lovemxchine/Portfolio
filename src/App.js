@@ -44,7 +44,7 @@ function App() {
       </nav>
 
       {/* <Introduce /> */}
-      <div ref={homeRef} style={{ height: "100vh" }}>
+      <div ref={homeRef} style={{ height: "90vh" }}>
         <Introduce />
       </div>
       <div ref={skillsRef} style={{ height: "100vh" }}>

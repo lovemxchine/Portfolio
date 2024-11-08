@@ -49,7 +49,7 @@ const Content = () => {
           </span>
           <span className="contact-text">github.com/lovemxchine</span>
         </a>
-        <a href="" className="contact">
+        <a className="contact">
           <span>
             <img src={emailIcon} className="icon"></img>
           </span>

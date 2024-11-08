@@ -11,6 +11,8 @@ import firebaseImg from "./assets/fireabase.png";
 import sqlImg from "./assets/mysql.png";
 import pgsqlImg from "./assets/postsql.png";
 import javaImg from "./assets/javapng.png";
+import bootstrapImg from "./assets/boostrap.png";
+import figmaImg from "./assets/figma.png";
 
 const Content = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -109,6 +111,15 @@ const Content = () => {
             onClick={() => window.open("https://git-scm.com/")}
           />
         </div>
+
+        <div className="skill-card">
+          <img
+            src={bootstrapImg}
+            alt="Avatar"
+            width="65%"
+            onClick={() => window.open("https://www.java.com/en/")}
+          />
+        </div>
       </div>
       <div className="skill-group">
         <div className="skill-card">
@@ -123,7 +134,7 @@ const Content = () => {
           <img
             src={firebaseImg}
             alt="Avatar"
-            width="80%"
+            width="70%"
             onClick={() => window.open("https://firebase.google.com/")}
           />
         </div>
@@ -149,6 +160,14 @@ const Content = () => {
             alt="Avatar"
             width="40%"
             onClick={() => window.open("https://www.java.com/en/")}
+          />
+        </div>
+        <div className="skill-card">
+          <img
+            src={figmaImg}
+            alt="Avatar"
+            width="40%"
+            onClick={() => window.open("https://www.figma.com/")}
           />
         </div>
       </div>
