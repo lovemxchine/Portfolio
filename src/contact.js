@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import githubIcon from "./assets/github.png";
+import emailIcon from "./assets/60543.png";
 const Content = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
@@ -42,11 +43,17 @@ const Content = () => {
         <h1>FEEL FREE TO CONTACT ME</h1>
       </div>
       <div>
-        <a href="" className="contact">
+        <a href="https://github.com/lovemxchine" className="contact">
           <span>
             <img src={githubIcon} className="icon"></img>
           </span>
-          <span className="">github.com/lovemxchine</span>
+          <span className="contact-text">github.com/lovemxchine</span>
+        </a>
+        <a href="" className="contact">
+          <span>
+            <img src={emailIcon} className="icon"></img>
+          </span>
+          <span className="contact-text">noey.chancher@gmail.com</span>
         </a>
       </div>
 
