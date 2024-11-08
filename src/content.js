@@ -15,24 +15,20 @@ import javaImg from "./assets/javapng.png";
 const Content = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
-  const hasAnimated = useRef(false); // Track if animation has occurred for this session
-
+  const hasAnimated = useRef(false);
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // Check if the section is intersecting (in view)
         if (entry.isIntersecting && !hasAnimated.current) {
-          // Trigger the animation if it's the first time or it has been reset
           setIsVisible(true);
           hasAnimated.current = true;
         } else if (!entry.isIntersecting) {
-          // Reset the animation state when it goes out of view (optional, if you want to reset animation when scrolling out of view)
           hasAnimated.current = false;
-          setIsVisible(false); // You can choose to reset the visibility or keep it
+          setIsVisible(false);
         }
       },
       {
-        threshold: 0.5, // Trigger when 50% of the section is in view
+        threshold: 0.4,
       }
     );
 
@@ -53,8 +49,8 @@ const Content = () => {
       className={`section ${isVisible ? "visible" : ""}`}
       style={{ paddingTop: "10rem" }}
     >
-      <div className="skill">
-        <h1>My Technical Skills </h1>
+      <div className="topic">
+        <h1>My Technical Skills</h1>
       </div>
       <div className="skill-group">
         <div className="skill-card">

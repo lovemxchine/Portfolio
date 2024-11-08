@@ -132,12 +132,6 @@ body {
   transition: all 0.3s ease;
   z-index: 1000;
 }
-/* 
-.navbar.scrolled {
-  background: rgba(28, 30, 34, 0.95);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 0.8rem 2rem;
-} */
 
 .nav-brand {
   font-family: "Cormorant Garamond", serif;
@@ -346,7 +340,8 @@ body {
   animation: slideUpFade 2s ease-out forwards;
 }
 
-.skill {
+.topic {
+  margin-bottom: 3rem;
   text-shadow: 0px 10px 20px rgba(255, 255, 255, 0.5);
 }
 .skill-group {
@@ -360,6 +355,7 @@ body {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
   margin-top: 0.4rem;
   transition: 0.3s;
+
   background-color: #fff;
   border-radius: 50%;
   width: 6rem;
@@ -373,8 +369,61 @@ body {
   transform: scale(1.1);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  animation: float 2s ease-in-out infinite;
 }
 
-.container {
-  padding: 2px 16px;
+.project-card {
+  /* background-color: #fff; */
+  border-radius: 5px;
+  gap: 2rem;
+  color: rgb(255, 255, 255);
+  padding: 2rem;
+  border-radius: 10%;
+  height: 50vh;
+  transition: transform 0.3s ease-out;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 5px 8px 2px rgba(0, 0, 0, 0.2);
+  /* backdrop-filter: blur(10px); */
+}
+.project-card-body {
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  /* box-shadow: 2px 5px 8px 2px rgba(255, 255, 255, 0.2); */
+}
+.project-card-header {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  /* margin-top: 0.4rem; */
+  transition: 0.3s;
+  background-color: #fff;
+  height: 25vh;
+  box-shadow: 2px 5px 8px 2px rgba(255, 255, 255, 0.2);
+}
+.project-card:hover {
+  transform: scale(1.1);
+  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); */
+  cursor: pointer;
+}
+
+.project-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.project-card-body {
+  padding: 0.5rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  /* width: vh; */
+  text-decoration: none;
+  color: white;
+  /* margin: 5rem 0; */
 }

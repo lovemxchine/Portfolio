@@ -1,6 +1,8 @@
 import "./App.css";
 import Introduce from "./introduce";
 import Content from "./content";
+import Project from "./project";
+import Contact from "./contact";
 // import { NavLink } from "react-router-dom";
 
 // import Navbar from "./components/navbar";
@@ -48,11 +50,11 @@ function App() {
       <div ref={skillsRef} style={{ height: "100vh" }}>
         <Content />
       </div>
-      <div ref={projectRef} style={{ height: "100vh" }}>
-        <h1>Contact Section</h1>
+      <div ref={projectRef} style={{ height: "130vh" }}>
+        <Project />
       </div>
-      <div ref={contactRef} style={{ height: "100vh" }}>
-        <h1>Contact Section</h1>
+      <div ref={contactRef} style={{ height: "90vh" }}>
+        <Contact />
       </div>
     </div>
   );
