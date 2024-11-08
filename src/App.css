@@ -396,6 +396,7 @@ body {
 .project-card-header {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
   /* margin-top: 0.4rem; */
+  border-radius: 7%;
   transition: 0.3s;
   background-color: #fff;
   height: 25vh;
@@ -416,7 +417,11 @@ body {
 }
 
 .project-card-body {
+  margin-top: 0.5rem;
   padding: 0.5rem;
+  width: 20rem;
+  text-align: center;
+  display: block;
 }
 
 .contact {

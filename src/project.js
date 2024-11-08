@@ -44,34 +44,42 @@ const Content = () => {
       <div className="project-group">
         <div className="project-card">
           <div className="project-card-header">
-            <h2>Project 1</h2>
+            <h2 style={{ color: "black" }}>Project 1</h2>
           </div>
           <div className="project-card-body">
+            <h2 style={{ marginBottom: "1rem" }}>Thesis</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              lacinia, nunc et tincidunt lacinia, nunc et tincidunt
+              I am developing a cross-platform application for my thesis project
+              in my fourth year. The project is designed for shops with leftover
+              food, allowing them to broadcast and sell these items through the
+              app
             </p>
           </div>
         </div>
         <div className="project-card">
           <div className="project-card-header">
-            <h2>Project 2</h2>
+            <h2 style={{ color: "black" }}>Project 2</h2>
           </div>
           <div className="project-card-body">
+            <h2 style={{ marginBottom: "1rem" }}>Thesis</h2>
+
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              lacinia, nunc et tincidunt lacinia, nunc et tincidunt
+              This project was for a Software Engineering class, I gained
+              comprehensive experience in software development, from
+              requirements gathering to implementation.
             </p>
           </div>
         </div>
         <div className="project-card">
           <div className="project-card-header">
-            <h2>Project 3</h2>
+            <h2 style={{ color: "black" }}>Project 3</h2>
           </div>
           <div className="project-card-body">
+            <h2 style={{ marginBottom: "1rem" }}>Thesis</h2>
+
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              lacinia, nunc et tincidunt lacinia, nunc et tincidunt
+              As part of a hands-on workshop in Web Application Development, I
+              gained practical experience in full-stack web development.
             </p>
           </div>
         </div>
