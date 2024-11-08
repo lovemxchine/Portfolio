@@ -1,6 +1,6 @@
 import "./App.css";
-import Introduce from "./components/introduce";
-import Content from "./components/content";
+import Introduce from "./introduce";
+import Content from "./content";
 // import { NavLink } from "react-router-dom";
 
 // import Navbar from "./components/navbar";
@@ -8,17 +8,48 @@ import Content from "./components/content";
 import React, { useRef, useEffect, useState } from "react";
 
 function App() {
-  // ใช้ useRef เพื่อสร้างการอ้างอิง (reference) ไปยัง section ต่าง ๆ
   const homeRef = useRef(null);
   const skillsRef = useRef(null);
   const projectRef = useRef(null);
   const contactRef = useRef(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+  const hasAnimated = useRef(false); // Track if animation has occurred for this session
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // Check if the section is intersecting (in view)
+        if (entry.isIntersecting && !hasAnimated.current) {
+          // Trigger the animation if it's the first time or it has been reset
+          setIsVisible(true);
+          hasAnimated.current = true;
+        } else if (!entry.isIntersecting) {
+          // Reset the animation state when it goes out of view (optional, if you want to reset animation when scrolling out of view)
+          hasAnimated.current = false;
+          setIsVisible(false); // You can choose to reset the visibility or keep it
+        }
+      },
+      {
+        threshold: 0.5, // Trigger when 50% of the section is in view
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current); // Clean up observer on unmount
+      }
+    };
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
-      // Change navbar style after scrolling 50px
       if (window.scrollY > 50) {
         setIsScrolled(true);
       } else {
@@ -28,13 +59,11 @@ function App() {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  // ฟังก์ชันเลื่อนไปยังตำแหน่งที่กำหนด
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
@@ -61,7 +90,7 @@ function App() {
       </nav>
 
       {/* <Introduce /> */}
-      <div ref={homeRef} style={{ height: "100vh" }}>
+      <div ref={homeRef} style={{ height: "130vh" }}>
         <Introduce />
       </div>
       <div ref={skillsRef} style={{ height: "100vh" }}>
