@@ -44,7 +44,7 @@ const Content = () => {
       <div className="project-group">
         <div className="project-card">
           <div className="project-card-header">
-            <h2 style={{ color: "black" }}>Project 1</h2>
+            {/* <h2 style={{ color: "black" }}>Project 1</h2> */}
           </div>
           <div className="project-card-body">
             <h2 style={{ marginBottom: "1rem" }}>Thesis</h2>
@@ -58,7 +58,7 @@ const Content = () => {
         </div>
         <div className="project-card">
           <div className="project-card-header">
-            <h2 style={{ color: "black" }}>Project 2</h2>
+            {/* <h2 style={{ color: "black" }}>Project 2</h2> */}
           </div>
           <div className="project-card-body">
             <h2 style={{ marginBottom: "1rem" }}>Restaurant App</h2>
@@ -72,7 +72,7 @@ const Content = () => {
         </div>
         <div className="project-card">
           <div className="project-card-header">
-            <h2 style={{ color: "black" }}>Project 3</h2>
+            {/* <h2 style={{ color: "black" }}>Project 3</h2> */}
           </div>
           <div className="project-card-body">
             <h2 style={{ marginBottom: "1rem" }}>Web Board</h2>
